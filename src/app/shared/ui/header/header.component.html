@@ -1,11 +1,11 @@
 <section #headerContainer class="header flex">
-  <div class="flex align-content-center col-4">
+  <div class="md:flex align-content-center hidden md:col-4">
     <img src="https://img.logoipsum.com/262.svg" alt="Logo" />
   </div>
-  <div class="col-4 flex justify-content-center align-items-center">
+  <div class="col-6 md:col-4 flex justify-content-center align-items-center">
     <h1>Quizz</h1>
   </div>
-  <nav class="col-4 flex justify-content-end text-right align-content-center align-items-center">
+  <nav class="col-6 md:col-4 flex justify-content-end text-right align-content-center align-items-center">
     <button
       pButton
       pRipple
@@ -16,8 +16,13 @@
       pButton
       pRipple
       label="Contact Us"
-      class="p-button-secondary"
+      class="mr-1 p-button-secondary"
     ></button>
+    <button
+      pButton
+      pRipple
+      icon="pi pi-user"
+      class="p-button-info"    ></button>
   </nav>
 </section>
 <div class="padded-div"></div>
